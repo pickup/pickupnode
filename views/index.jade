@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    h1= title
+    p Welcome to #{title}
+    ul
+        - for(var i in users) {
+            li
+                b #{ users[i].id }
+                | #{ users[i].name }
+        - }

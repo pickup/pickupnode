@@ -1,0 +1,24 @@
+extends layout
+block content
+    .col-xs-4.col-sm-4.col-md-4
+    .col-xs-4.col-sm-4.col-md-4
+        form(role="form")
+            .form-group
+                label(for="txtUserEmail") 电子邮箱
+                input#txtUserEmail.form-control(type="email" placeholder="请输入电子邮箱")
+
+            .form-group
+                label(for="txtPassword") 密码
+                input#txtPassword.form-control(type="password" placeholder="请输入密码")
+
+            .checkbox
+                label 记住我
+                input#ckbRememberme(type="checkbox")
+
+            .col-xs-8.col-sm-8.col-md-8(style="padding-left:0")
+                button.btn.btn-primary.btn-block(type="submit") 登录
+
+            .col-xs-4.col-sm-4.col-md-4(style="padding-right:0")
+                button.btn.btn-default.btn-block(type="button") 取消
+    .col-xs-4.col-sm-4.col-md-4
+
